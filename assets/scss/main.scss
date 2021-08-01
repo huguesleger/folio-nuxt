@@ -1,6 +1,22 @@
+// Abstracts
+// ==================
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Vendors
+// ==================
 @import 'vendors/splitting';
 @import 'vendors/splitting-cells';
+
+// Layout
+// ==================
+@import 'layout/cursor';
+
+// Base
+// ==================
 @import 'base/reset';
 @import 'base/base';
+
+// Partials
+// ==================
 @import 'partials/loader';

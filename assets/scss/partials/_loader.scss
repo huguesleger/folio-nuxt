@@ -30,6 +30,7 @@
             }
         }
         .wrapper-job {
+            padding: 0 1rem;
             .content-inner, .subtitle {
                 overflow: hidden;
             }
@@ -44,5 +45,56 @@
     }
     .char {
         will-change: transform;
+    }
+}
+@include maxwidth(xs) {
+    .loader {
+        .loader-inner {
+            .wrapper-name {
+                .name {
+                    font-size: 2.5rem;
+                }
+            }
+            .wrapper-job {
+                .title {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+@include minmaxwidth(xs, sm) {
+    .loader {
+        .loader-inner {
+            .wrapper-name {
+                .name {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+}
+
+@include minmaxwidth(sm, md) {
+    .loader {
+        .loader-inner {
+            .wrapper-name {
+                .name {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}
+
+@include minmaxwidth(md, xxl) {
+    .loader {
+        .loader-inner {
+            .wrapper-name {
+                .name {
+                    font-size: 6rem;
+                }
+            }
+        }
     }
 }
