@@ -10,11 +10,17 @@
   },
   "dependencies": {
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "draggabilly": "^2.3.0",
+    "gsap": "^3.7.1",
+    "locomotive-scroll": "^4.1.1",
+    "nuxt": "^2.15.7",
+    "pixi.js": "^6.0.4"
   },
   "devDependencies": {
     "fibers": "^5.0.0",
+    "math-fit": "^1.0.1",
     "sass": "^1.36.0",
-    "sass-loader": "^10.2.0"
+    "sass-loader": "^10.2.0",
+    "splitting": "^1.0.6"
   }
 }
