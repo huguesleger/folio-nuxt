@@ -16,7 +16,10 @@
 // ==================
 @import 'base/reset';
 @import 'base/base';
+@import 'base/animations';
 
 // Partials
 // ==================
-@import 'partials/loader';
+@import 'components/loader';
+
+@import 'pages/home';

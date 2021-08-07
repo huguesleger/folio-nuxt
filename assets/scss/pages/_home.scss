@@ -1,0 +1,34 @@
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10rem 3rem 5rem;
+    .intro-title {
+        position: relative;
+        font-size: 15vw;
+        text-transform: uppercase;
+        font-family: $font_butler;
+        display: block;
+        line-height: 0.78;
+        span {
+            display: block;
+        }
+        .name {
+            text-align: right;
+        }
+        .folio {
+            font-family: $font_poppins;
+            text-decoration: underline;
+            font-style: italic;
+        }
+        .circle-city {
+            width: 10vw;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            img {
+                animation: 10s linear infinite rotate;
+            }
+        }
+    }
+}

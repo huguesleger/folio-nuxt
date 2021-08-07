@@ -123,3 +123,9 @@
         right: -45px;
     }
 }
+
+@include maxwidth(xl) {
+    .cursor {
+        display: none;
+    }
+}

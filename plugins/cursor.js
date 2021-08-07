@@ -9,24 +9,34 @@ export class Cursor {
         this.icon = document.querySelector('.cursor-icon');
         this.cursorDrag = document.querySelector('.cursor-drag');
 
-        this.events();
-        this.initCursor();
+        // this.events();
+        // this.initCursor();
+        this.activeCursor();
     }
-
+    
+    activeCursor() {
+        const w = window.innerWidth;
+        
+        if (w >= 1199) {
+            this.events();
+            this.initCursor();
+        }
+    }
+    
     events() {
         document.body.addEventListener('mousemove', this.onMouseMove.bind(this));
-
+        
         const el = document.querySelectorAll([
             "button",
             "a",
             "[data-cursor-label]",
             "[data-cursor-drag]"
         ]);
-
+        
         for (var i = 0; i < el.length; i++) {
             el[i].addEventListener('mouseenter', this.onMouseEnter.bind(this));
             el[i].addEventListener('mouseleave', this.onMouseLeave.bind(this));
-          }
+        }  
     }
 
     initCursor() {

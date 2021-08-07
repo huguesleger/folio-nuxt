@@ -1,16 +1,23 @@
 @font-face {
+    font-family: 'Butler';
+    src: url('~assets/fonts/Butler.woff2') format('woff2'),
+         url('~assets/fonts/Butler.woff') format('woff');
+}
+
+@font-face {
     font-family: 'Butler-Black';
-    src: url('~assets/fonts/Butler-Black.woff') format('woff'),
-         url('~assets/fonts/Butler-Black.woff2') format('woff2');
+    src: url('~assets/fonts/Butler-Black.woff2') format('woff2'),
+         url('~assets/fonts/Butler-Black.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Butler-Medium';
-    src: url('~assets/fonts/Butler-Medium.woff') format('woff'),
-         url('~assets/fonts/Butler-Medium.woff2') format('woff2');
+    src: url('~assets/fonts/Butler-Medium.woff2') format('woff2'),
+         url('~assets/fonts/Butler-Medium.woff') format('woff');
 }
 
 $font_poppins: 'Poppins', sans-serif;
+$font_butler: 'Butler';
 $font_butler_black: 'Butler-Black';
 $font_butler_medium: 'Butler-Medium';
 
